@@ -7,13 +7,13 @@ using namespace std; // u¿ywamy standardowej przestrzeni nazw
 int main(int argc, char** argv) { // g³ówna funkcja w c++
 	cout << "Hello world" << endl; // wyœwietlanie napisu
 	cout <<  "Jestem twoim komputerem :)" << endl; // wyœwietlanie napisu
-    int i=3158;
+    int i=10;
 //	for (;i<10;i++)	{ // pêtla zewnêtrzna
     
     	for (int j=0;j<i;j++) { // pêtla wewnêtrzna
-    		cout << "*" << j << endl  ;   // wyœwietlanie napisu
+    		cout << j << " ) *" <<  endl   ;   // wyœwietlanie napisu 
 		}
-		
+	//	cout << "+" ;
 //		cout << "Enter->";
 //        cout <<	endl ; // przejœcie do nowej lini 
 //	}
