@@ -8,10 +8,12 @@ int main(int argc, char** argv) { // g³ówna funkcja w c++
 		cout << "q) aby wyjsc" << endl;
 		cout << "1) rysuj choinke" << endl;
 		cout << "2) rysuj lejek" << endl;		
+		cout << "3) rysuj krysztal" << endl;		
+		cout << "4) rysuj ..." << endl;				
 		cin >> znak;    // pobierz znak z klawiatury i zapisz do zmiennej znak
-		cout << "wpisales" << znak << endl;
+		cout << "wpisales " << znak << endl;
 		
-		if(znak == '1'){
+		if(znak == '2'){
 			int i = 0;
 			for (;i<10;i++)	{ // pêtla zewnêtrzna
 		    	for (int s=(0);s<i;s++) { // pêtla wewnêtrzna
@@ -27,10 +29,23 @@ int main(int argc, char** argv) { // g³ówna funkcja w c++
 			}
 		}
 		
-		if(znak == '2'){
-			cout << "lejek" << endl;
+		if(znak == '1'){
+			 int i=0;
+			for (;i<10;i++)	{ // pêtla zewnêtrzna
+		    	for (int s=(10-i);s>0;s--) { // pêtla wewnêtrzna
+		    		cout << " " ;   // wyœwietlanie spacji przed gwiazdkami 
+				}
+				for (int j=0;j<i;j = j + 1) { // pêtla wewnêtrzna
+		    		cout << "*" ;   // wyœwietlanie gwiazdek z lewej 
+				}
+				for (int j=0;j<i;j = j + 1) { // pêtla wewnêtrzna
+		    		cout << "*" ;   // wyœwietlanie gwiazdek z prawej 
+				}
+			    cout <<	endl ; // przejœcie do nowej lini 
+					
+				}
 		}
 	}
 	return 0;
-}
 
+}
