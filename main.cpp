@@ -25,7 +25,7 @@ int main(int argc, char** argv) { // g³ówna funkcja w c++
 				for (int j=10;j>i;j = j - 1) { // pêtla wewnêtrzna
 		    		cout << "*" ;   // wyœwietlanie gwiazdek z prawej 
 				}
-	    	cout <<	endl ; // przejœcie do nowej lini 
+	    		cout <<	endl ; // przejœcie do nowej lini 
 			}
 		}
 		
@@ -45,7 +45,73 @@ int main(int argc, char** argv) { // g³ówna funkcja w c++
 					
 				}
 		}
-	}
-	return 0;
+		if(znak == '3'){
+			int i=0;
+			for (;i<10;i++)	{ // pêtla zewnêtrzna
+		    	for (int s=(10-i);s>0;s--) { // pêtla wewnêtrzna
+		    		cout << " " ;   // wyœwietlanie spacji przed gwiazdkami 
+				}
+				for (int j=0;j<i;j = j + 1) { // pêtla wewnêtrzna
+		    		cout << "*" ;   // wyœwietlanie gwiazdek z lewej 
+				}
+				for (int j=0;j<i;j = j + 1) { // pêtla wewnêtrzna
+		    		cout << "*" ;   // wyœwietlanie gwiazdek z prawej 
+				}
+			    cout <<	endl ; // przejœcie do nowej lini}
+//	             {
+//				}
+	    		cout <<	endl ; // przejœcie do nowej lini
+//	    		{
+				int i=0;
+				for (;i<10;i++)	{ // pêtla zewnêtrzna
+			    	for (int s=(0);s<i;s++) { // pêtla wewnêtrzna
+			    		cout << " " ;   // wyœwietlanie spacji przed gwiazdkami 
+					}
+					for (int j=10;j>i;j = j - 1) { // pêtla wewnêtrzna
+			    		cout << "*" ;   // wyœwietlanie gwiazdek z lewej 
+					}
+					for (int j=10;j>i;j = j - 1) { // pêtla wewnêtrzna
+			    		cout << "*" ;   // wyœwietlanie gwiazdek z prawej 
+					}
+		    	cout <<	endl ; // przejœcie do nowej lini
+		    	
+			}
+//				 }
+			}
+		}
+		if(znak == '4'){
+			// narysowac krysztal
+			
+			for (int i=0;i<10;i++)	{ // pêtla zewnêtrzna
+		    	for (int s=(10-i);s>0;s--) { // pêtla wewnêtrzna
+		    		cout << " " ;   // wyœwietlanie spacji przed gwiazdkami 
+				}
+				for (int j=0;j<i;j = j + 1) { // pêtla wewnêtrzna
+		    		cout << "*" ;   // wyœwietlanie gwiazdek z lewej 
+				}
+				for (int j=0;j<i;j = j + 1) { // pêtla wewnêtrzna
+		    		cout << "*" ;   // wyœwietlanie gwiazdek z prawej 
+				}
+			    cout <<	endl ; // przejœcie do nowej lini 
+				}
+			
+			for (int i=0;i<10;i++)	{ // pêtla zewnêtrzna
+		    	for (int s=(0);s<i;s++) { // pêtla wewnêtrzna
+		    		cout << " " ;   // wyœwietlanie spacji przed gwiazdkami 
+				}
+				for (int j=10;j>i;j = j - 1) { // pêtla wewnêtrzna
+		    		cout << "*" ;   // wyœwietlanie gwiazdek z lewej 
+				}
+				for (int j=10;j>i;j = j - 1) { // pêtla wewnêtrzna
+		    		cout << "*" ;   // wyœwietlanie gwiazdek z prawej 
+				}
+	    		cout <<	endl ; // przejœcie do nowej lini 		
+				}	
+		}
 
 }
+return 0;
+}
+
+
+
