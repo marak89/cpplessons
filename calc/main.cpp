@@ -1,10 +1,18 @@
 #include <iostream>
 using namespace std;
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
+void  wpisz(int &x, int &y){
+	cout << "Podaj x" << endl;
+	cin >>x;
+	cout << "Podaj y" << endl;
+	cin >> y;
+	cout << "Podales x = " << x << " y = " << y << endl;	
+}
+	
 int main(int argc, char** argv)  {
 	char znak;
-	int x,y;
+	int x=0 ,y=0;
+	
 	while(znak != 'q'){	
 		
 		cout << "Wybierz pozycje z menu:" << endl;
@@ -17,60 +25,32 @@ int main(int argc, char** argv)  {
 		
 		if(znak == '1'){
 			cout << "Dodawanie" << endl;
-			cout << "podaj x" << endl;
-			cin >> x;
-			cout << "podaj y" << endl;
-			cin >> y;
-			cout << "podales x= " << x << " y= " << y << endl;
+			wpisz(x,y);
 			cout << "" << x << " + " << y << " = " << x+y << endl;
 		}
 			
 		if(znak == '2'){
 			cout << "Odejmowanie" << endl;
-			cout << "podaj x" << endl;
-			cin >>x;
-			cout << "podaj y" << endl;
-			cin >> y;
-			cout << "podales x= " << x << " y= " << y << endl;
+			wpisz(x,y);
 			cout << "" << x << " - " << y << " = " << x-y << endl;
-			
-					}
+		}
 		
 		if(znak == '3'){
 			cout << "Mnozenie" << endl;
-			cout << "podaj x" << endl;
-			cin >>x;
-			cout << "podaj y" << endl;
-			cin >> y;
-			cout << "podales x= " << x << " y= " << y << endl;
+			wpisz(x,y);
 			cout << "" << x << " * " << y << " =  " << x*y << endl;
 		}
 
 		if(znak == '4'){
 			cout << "Dzielenie" << endl;
-			cout << "podaj x" << endl;	
-			cin >>x;
-			cout << "podaj y" << endl;
-			cin >> y;
+			wpisz(x,y);
 			if( y == 0 ){
 				cout <<	"nie mozna dzielic przez zero" << endl;
 			} else {
-			    cout << "podales x= " << x << " y= " << y << endl;
 			    cout << "" << x << " / " << y << " =  " << x/y << endl;	
 			}
 			
 		}
-		
-	
-
-
-
-}
-
-
-
-
-	
-
+	}
 	return 0;
 }
