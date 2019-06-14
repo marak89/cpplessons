@@ -8,10 +8,10 @@ int main(int argc, char** argv)  {
 	while(znak != 'q'){	
 		
 		cout << "Wybierz pozycje z menu:" << endl;
-		cout << "q) aby wyjœæ" << endl;
+		cout << "q) aby wyjsc" << endl;
 		cout << "1) Dodawanie" << endl;
 		cout << "2) Odejmowanie" << endl;
-		cout << "3) Mnorzenie" << endl;
+		cout << "3) Mnzenie" << endl;
 		cout << "4) Dzielenie" << endl;
 		cin >> znak;
 		
@@ -26,17 +26,42 @@ int main(int argc, char** argv)  {
 		}
 			
 		if(znak == '2'){
-			cout << "Odejmowanie" << endl;	
-		}
+			cout << "Odejmowanie" << endl;
+			cout << "podaj x" << endl;
+			cin >>x;
+			cout << "podaj y" << endl;
+			cin >> y;
+			cout << "podales x= " << x << " y= " << y << endl;
+			cout << "" << x << " - " << y << " = " << x-y << endl;
+			
+					}
 		
 		if(znak == '3'){
-			cout << "Mnorzenie" << endl;
+			cout << "Mnozenie" << endl;
+			cout << "podaj x" << endl;
+			cin >>x;
+			cout << "podaj y" << endl;
+			cin >> y;
+			cout << "podales x= " << x << " y= " << y << endl;
+			cout << "" << x << " * " << y << " =  " << x*y << endl;
 		}
 
 		if(znak == '4'){
 			cout << "Dzielenie" << endl;
+			cout << "podaj x" << endl;	
+			cin >>x;
+			cout << "podaj y" << endl;
+			cin >> y;
+			if( y == 0 ){
+				cout <<	"nie mozna dzielic przez zero" << endl;
+			} else {
+			    cout << "podales x= " << x << " y= " << y << endl;
+			    cout << "" << x << " / " << y << " =  " << x/y << endl;	
+			}
 			
 		}
+		
+	
 
 
 
