@@ -1,0 +1,7 @@
+Napisz program wypisuj¹cy na ekranie najwiêksz¹ z trzech podanych liczb a,b,c
+
+
+
+http://andrzej-nowak.cba.pl/materialy/programowanie/c++_1.pdf
+
+
