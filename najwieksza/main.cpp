@@ -5,25 +5,56 @@ using namespace std;
 int main(int argc, char** argv) {
 	char znak;
 	int x=0 ,y=0 ,z=0;
-		cout << "podaj x";
+	int najwieksza=0;
+		cout << "podaj x: ";
 		cin	>> x;
 		cout << " x= " << x << endl;
-		cout << "podaj y";
+		cout << "podaj y: ";
 		cin >> y;
 		cout << " y= " << y << endl;
-		cout << "podaj z";
+		cout << "podaj z: ";
 		cin >> z;
 		cout << " z= " << z << endl;
 		
-		//cout << " x= " << x << endl;
-	if( x >> 4 ){
-		cout <<"wiencej niz trzy" << endl; 
-	}else{
-		if(argc == 4 ){
-			cout <<"rowne trzy" << endl;
-		}else{
-			cout << "mniej niz trz;y" << endl;
-		}
+		cout << ""<< endl;
+		// -------------------
+		
+		
+	if (x>y){
+	cout << x <<" jest wieksze od " << y << endl;
+		najwieksza=x;	
 	}
+	if (x<y){
+	cout << x <<" jest mniejsze od "<< y << endl;	
+	}
+	if (x==y){
+	cout << x <<" jest rowne "<< y << endl;	
+	}
+		
+	if (x>z){
+	cout << x <<" jest wieksze od " << z << endl;	
+	}
+	if (x<z){
+	cout << x <<" jest mniejsze od " << z << endl;
+	}
+	if (x==z){
+	cout << x <<" jest rowne "<< y << endl;	
+	}
+	
+	if (z>y){
+	cout << z <<" jest wieksze od "<< y << endl;	
+	}
+	if (z<y){
+	cout << z <<" jest mniejsze od "<< y << endl;	
+	}
+	if (z==y){
+	cout << z <<" jest rowne "<< y << endl;	
+	}
+	
+
+
+	// --------------
+	
+	cout << endl << "Najwieksza znalezniona: " << najwieksza;
 	return 0;
 }
